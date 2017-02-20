@@ -8,7 +8,7 @@ html, body {
 	padding: 0;
 	height: 100%;
 }
-h1 {
+h1, #typed-strings {
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	font-size: 2em;
@@ -28,6 +28,7 @@ h1 {
 	align-items: center;
 	-webkit-justify-content: center;
 	justify-content: center;
+	text-align: left;
 }
 nav {
 	z-index: 9999;
@@ -169,4 +170,27 @@ section {
 .black a:hover {
 	padding-bottom: 4px;
 	border-bottom: 1px solid #000;
+}
+
+/* cursor */
+.typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
 }
