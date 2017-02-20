@@ -29,7 +29,7 @@ $(window).scroll(function() {
     $(function(){
 
         $(".test").typed({
-            strings: ["I actually <strong>enjoy</strong> writting email code."],
+            strings: ["I actually <strong>enjoy</strong> writing email code."],
             typeSpeed: 20,
             backDelay: 500,
             // time before typing starts
