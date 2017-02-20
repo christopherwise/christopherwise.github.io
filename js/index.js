@@ -7,7 +7,7 @@ function play() {
             next = $(".slideshow .image:first");
         }
         next.addClass("active");
-    }, 100000);
+    }, 15000);
 }
 play();
 });
@@ -28,21 +28,39 @@ $(window).scroll(function() {
 /* typed */
     $(function(){
 
-        $("#typed").typed({
-            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
-            stringsElement: $('#typed-strings'),
-            typeSpeed: 30,
+        $(".test").typed({
+            strings: ["I actually <strong>enjoy</strong> writting email code."],
+            typeSpeed: 20,
             backDelay: 500,
+            // time before typing starts
+            startDelay: 2200,
             loop: false,
+            // show cursor
+            showCursor: true,
+            // character for cursor
+            cursorChar: "|",
             contentType: 'html', // or text
             // defaults to false for infinite loop
             loopCount: false,
-            callback: function(){ foo(); },
-            resetCallback: function() { newTyped(); }
-        });
-
-        $(".reset").click(function(){
-            $("#typed").typed('reset');
         });
 
     });
+
+$(function(){
+    $(".wine").typed('reset')
+      $(".wine").typed({
+            strings: ["I also like wine."],
+            typeSpeed: 20,
+            backDelay: 500,
+            // time before typing starts
+            startDelay: 16000,
+            loop: false,
+            // show cursor
+            showCursor: true,
+            // character for cursor
+            cursorChar: "|",
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+        });
+});

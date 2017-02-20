@@ -8,27 +8,25 @@ html, body {
 	padding: 0;
 	height: 100%;
 }
-h1, #typed-strings {
+h1 {
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	font-size: 2em;
 	font-weight: 400;
 	letter-spacing: .15em;
-	position: relative;
-	top: 35%;
 	opacity: .70;
-	-ms-box-orient: horizontal;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: flex;
-	align-self: center;
-	align-items: center;
-	-webkit-justify-content: center;
-	justify-content: center;
 	text-align: left;
+
+}
+.heroText {
+	position: relative;
+	top: 25%;
+	-ms-box-orient: horizontal;
+	display: block;
+	text-align: center;
+	margin:0 auto;
+	width: 45%;
+
 }
 nav {
 	z-index: 9999;
@@ -49,12 +47,12 @@ nav {
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-justify-content: space-around;
+/*	-webkit-justify-content: space-around;
 	justify-content: space-around;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 	-webkit-align-items: stretch;
-	align-items: stretch;
+	align-items: stretch;*/
 }
 .flexItem {
 	font-weight: bold;
@@ -175,6 +173,7 @@ section {
 /* cursor */
 .typed-cursor{
 	opacity: 1;
+	color: white;
 	-webkit-animation: blink 0.7s infinite;
 	-moz-animation: blink 0.7s infinite;
 	animation: blink 0.7s infinite;
