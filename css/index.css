@@ -181,9 +181,6 @@ section {
 	padding-bottom: 4px;
 	border-bottom: 1px solid #000;
 }
-.backBlack {
-	background-color: #000;
-}
 
 /* cursor */
 .typed-cursor{
@@ -215,7 +212,7 @@ section {
 	display: block;
 }
 /* media queries */
-@media (max-width: 480px) {
+@media (max-width: 700px) {
 .heroText {
 	width: 90%;
 	top: 20%;
