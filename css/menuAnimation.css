@@ -1,0 +1,105 @@
+.btn1 {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  
+  right: 12px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.btn1 .icon-left {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 15px;
+  top: 15px;
+  background-color: #fff;
+  left: 0px;
+}
+.btn1 .icon-left:before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+  top: -10px;
+}
+.btn1 .icon-left:after {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+  top: 10px;
+}
+.btn1 .icon-left:hover {
+  cursor: pointer;
+}
+.btn1 .icon-right {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 15px;
+  top: 15px;
+  background-color: #fff;
+  left: 15px;
+}
+.btn1 .icon-right:before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+  top: -10px;
+}
+.btn1 .icon-right:after {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+  top: 10px;
+}
+.btn1.open .icon-left {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: transparent;
+}
+.btn1.open .icon-left:before {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+          transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+}
+.btn1.open .icon-left:after {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+          transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+}
+.btn1.open .icon-right {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: transparent;
+}
+.btn1.open .icon-right:before {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+          transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+}
+.btn1.open .icon-right:after {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+          transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+}
+.btn1:hover {
+  cursor: pointer;
+}
+.btn1 .backBlack:before, .btn1 .backBlack:after, .btn1 .backBlack{
+	background-color: #000;
+}
