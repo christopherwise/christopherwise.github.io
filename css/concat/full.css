@@ -1,3 +1,135 @@
+/* fonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+
+/* cursor */
+.typed-cursor{
+	opacity: 1;
+	color: white;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+
+.mobHamb {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  
+  right: 12px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.mobHamb .icon-left {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 15px;
+  top: 15px;
+  background-color: #fff;
+  left: 0px;
+}
+.mobHamb .icon-left:before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+  top: -10px;
+}
+.mobHamb .icon-left:after {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+  top: 10px;
+}
+.mobHamb .icon-left:hover {
+  cursor: pointer;
+}
+.mobHamb .icon-right {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 15px;
+  top: 15px;
+  background-color: #fff;
+  left: 15px;
+}
+.mobHamb .icon-right:before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+  top: -10px;
+}
+.mobHamb .icon-right:after {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+  top: 10px;
+}
+.mobHamb.open .icon-left {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: transparent;
+}
+.mobHamb.open .icon-left:before {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+          transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+}
+.mobHamb.open .icon-left:after {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+          transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+}
+.mobHamb.open .icon-right {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: transparent;
+}
+.mobHamb.open .icon-right:before {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+          transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+}
+.mobHamb.open .icon-right:after {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+          transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+}
+.mobHamb:hover {
+  cursor: pointer;
+}
+.mobHamb .backBlack:before, .mobHamb .backBlack:after, .mobHamb .backBlack{
+	background-color: #000;
+}
 
 
 /* css */

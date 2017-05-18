@@ -1,4 +1,4 @@
-.btn1 {
+.mobHamb {
   position: fixed;
   width: 30px;
   height: 30px;
@@ -8,7 +8,7 @@
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
-.btn1 .icon-left {
+.mobHamb .icon-left {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   position: absolute;
@@ -18,7 +18,7 @@
   background-color: #fff;
   left: 0px;
 }
-.btn1 .icon-left:before {
+.mobHamb .icon-left:before {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   position: absolute;
@@ -28,7 +28,7 @@
   content: "";
   top: -10px;
 }
-.btn1 .icon-left:after {
+.mobHamb .icon-left:after {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   position: absolute;
@@ -38,10 +38,10 @@
   content: "";
   top: 10px;
 }
-.btn1 .icon-left:hover {
+.mobHamb .icon-left:hover {
   cursor: pointer;
 }
-.btn1 .icon-right {
+.mobHamb .icon-right {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   position: absolute;
@@ -51,7 +51,7 @@
   background-color: #fff;
   left: 15px;
 }
-.btn1 .icon-right:before {
+.mobHamb .icon-right:before {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   position: absolute;
@@ -61,7 +61,7 @@
   content: "";
   top: -10px;
 }
-.btn1 .icon-right:after {
+.mobHamb .icon-right:after {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   position: absolute;
@@ -71,35 +71,35 @@
   content: "";
   top: 10px;
 }
-.btn1.open .icon-left {
+.mobHamb.open .icon-left {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   background: transparent;
 }
-.btn1.open .icon-left:before {
+.mobHamb.open .icon-left:before {
   -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
           transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
 }
-.btn1.open .icon-left:after {
+.mobHamb.open .icon-left:after {
   -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
           transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
 }
-.btn1.open .icon-right {
+.mobHamb.open .icon-right {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   background: transparent;
 }
-.btn1.open .icon-right:before {
+.mobHamb.open .icon-right:before {
   -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
           transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
 }
-.btn1.open .icon-right:after {
+.mobHamb.open .icon-right:after {
   -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
           transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
 }
-.btn1:hover {
+.mobHamb:hover {
   cursor: pointer;
 }
-.btn1 .backBlack:before, .btn1 .backBlack:after, .btn1 .backBlack{
+.mobHamb .backBlack:before, .mobHamb .backBlack:after, .mobHamb .backBlack{
 	background-color: #000;
 }

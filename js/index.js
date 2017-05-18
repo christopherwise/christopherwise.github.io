@@ -1,19 +1,5 @@
-/* slideshow */
-// $(document).ready(function() {
-// function play() {
-//     setInterval(function(){
-//         var next = $(".slideshow .active").removeClass("active").next(".image");
-//         if (!next.length) {
-//             next = $(".slideshow .image:first");
-//         }
-//         next.addClass("active");
-//     }, 15000);
-// }
-// play();
-// });
 
 /* nav */
-
 $(window).scroll(function() {
 
     if ($(window).scrollTop() > 50) {
@@ -49,25 +35,6 @@ $(window).scroll(function() {
 
     });
 
-// $(function(){
-//     $(".wine").typed('reset')
-//       $(".wine").typed({
-//             strings: ["I also like wine."],
-//             typeSpeed: 20,
-//             backDelay: 500,
-//             // time before typing starts
-//             startDelay: 16000,
-//             loop: false,
-//             // show cursor
-//             showCursor: true,
-//             // character for cursor
-//             cursorChar: "|",
-//             contentType: 'html', // or text
-//             // defaults to false for infinite loop
-//             loopCount: false,
-//         });
-// });
-
 // open mobile menu
 $('.js-toggle-menu').click(function(e){
   e.preventDefault();
@@ -76,10 +43,10 @@ $('.js-toggle-menu').click(function(e){
 });
 
 // menu
-$('.btn1').click(function(){
+$('.mobHamb').click(function(){
     $('.menu').toggleClass("show");
 });
 
-$('.btn1').click (function(){
+$('.mobHamb').click (function(){
   $(this).toggleClass('open');
 });
