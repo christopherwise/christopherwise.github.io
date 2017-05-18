@@ -1,8 +1,6 @@
 
 
 /* css */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
-
 
 html, body {
 	-moz-osx-font-smoothing: antialiased;
@@ -29,7 +27,8 @@ h1 {
 	display: block;
 	text-align: center;
 	margin:0 auto;
-	width: 45%;
+	width: 65%;
+	max-width: 1000px;
 
 }
 nav {
@@ -170,13 +169,12 @@ nav {
 }
 section {
 	margin: 100px auto 100px auto;
-	height: 500px;
-	max-width: 600px;
+	width: 80%;
+	max-width: 1000px;
 	background: purple;
 	text-align: center;
-	padding-top: 300px;
 	color: white;
-	font-size: 4em;
+	font-size: 2em;
 	overflow: hidden;
 }
 .black a {
@@ -184,7 +182,7 @@ section {
 }
 .black a:hover {
 	padding-bottom: 4px;
-	border-bottom: 1px solid #000;
+	border-bottom: 4px solid #000;
 }
 
 /* media queries */
@@ -223,6 +221,9 @@ section {
 	}
 	a.menu-trigger {
 		display: block;
+	}
+	.link .bar {
+		border-bottom: none;
 	}
 }
 

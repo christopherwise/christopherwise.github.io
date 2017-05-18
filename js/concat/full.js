@@ -17,7 +17,7 @@ $(window).scroll(function() {
 /* typed */
     $(function(){
 
-        $(".test").typed({
+        $(".cursors").typed({
             strings: ["I actually <strong>enjoy</strong> writing email code."],
             typeSpeed: 20,
             backDelay: 500,
