@@ -1,5 +1,6 @@
 /* fonts */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+@import url('https://fonts.googleapis.com/css?family=Questrial');
 
 /* cursor */
 .typed-cursor{
@@ -144,7 +145,7 @@ html, body {
 /* nav and header */
 h1 {
 	color: white;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 2em;
 	font-weight: 400;
 	letter-spacing: .15em;
@@ -198,7 +199,7 @@ nav {
   border-right: 1px solid black;
 }
 .title {
-	font-family: Roboto;
+	font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .name {
 	font-size: 24px;
@@ -285,7 +286,6 @@ nav {
 
 
 
-
 .hide, .mobHamb {
 	display: none;
 }
@@ -300,14 +300,48 @@ nav {
 	text-shadow: none;
 }
 section {
-	margin: 100px auto 100px auto;
+	margin: 40px auto 40px auto;
+	padding: 50px 20px;
 	width: 80%;
 	max-width: 1000px;
-	background: purple;
 	text-align: center;
 	color: white;
 	font-size: 2em;
 	overflow: hidden;
+}
+.sectionText {
+	width: 75%;
+	margin: 0 auto;
+}
+#about {
+	background: #4281A4;
+}
+#blog {
+	background: #FE938C;
+}
+#contact {
+	background: #9CAFB7;
+}
+
+.portrait {
+	max-width: 200px;
+	max-height: 200px;
+	text-align: center;
+	border-radius: 50%;
+	margin-bottom: 25px;
+}
+p {
+	font-size: .65em;
+	line-height: 1.5em;
+	text-align: left;
+	font-family: 'Questrial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.mailMe {
+	text-decoration: underline;
+	color: white;
+}
+.mailMe:hover {
+	color:#FE938C;
 }
 .black a {
 	color: #000;
@@ -356,6 +390,9 @@ section {
 	}
 	.link .bar {
 		border-bottom: none;
+	}
+	.sectionText {
+		width: 95%;
 	}
 }
 
