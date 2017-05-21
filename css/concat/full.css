@@ -336,12 +336,32 @@ p {
 	text-align: left;
 	font-family: 'Questrial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.mailMe {
-	text-decoration: underline;
-	color: white;
+.alink{
+	text-decoration: none;
+	color: #566c73;
+	position: relative;
 }
-.mailMe:hover {
-	color:#FE938C;
+.alink:hover {
+	color: #566c73;
+}
+.alink:before {
+	content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #566c73;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.alink:hover:before {
+	  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 .black a {
 	color: #000;
