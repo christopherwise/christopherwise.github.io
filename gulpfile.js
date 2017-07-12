@@ -17,7 +17,7 @@ var babelify = require('babelify'),
     watchify = require('watchify');
 var config = {
     js: {
-        src: './js/concat/full.js', // Entry point
+        src: './js/index.js', // Entry point
         outputDir: './js/build/', // Directory to save bundle to
         mapDir: './js/maps/', // Subdirectory to save maps to
         outputFile: 'bundle.js' // Name to use for bundle
