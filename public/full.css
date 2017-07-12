@@ -1,0 +1,418 @@
+/* fonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+/* cursor */
+.typed-cursor{
+	opacity: 1;
+	color: white;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+
+.mobHamb {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  
+  right: 12px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.mobHamb .icon-left {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 15px;
+  top: 15px;
+  background-color: #fff;
+  left: 0px;
+}
+.mobHamb .icon-left:before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+  top: -10px;
+}
+.mobHamb .icon-left:after {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+  top: 10px;
+}
+.mobHamb .icon-left:hover {
+  cursor: pointer;
+}
+.mobHamb .icon-right {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 15px;
+  top: 15px;
+  background-color: #fff;
+  left: 15px;
+}
+.mobHamb .icon-right:before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+  top: -10px;
+}
+.mobHamb .icon-right:after {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+  top: 10px;
+}
+.mobHamb.open .icon-left {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: transparent;
+}
+.mobHamb.open .icon-left:before {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+          transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+}
+.mobHamb.open .icon-left:after {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+          transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+}
+.mobHamb.open .icon-right {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: transparent;
+}
+.mobHamb.open .icon-right:before {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+          transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+}
+.mobHamb.open .icon-right:after {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+          transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+}
+.mobHamb:hover {
+  cursor: pointer;
+}
+.mobHamb .backBlack:before, .mobHamb .backBlack:after, .mobHamb .backBlack{
+	background-color: #000;
+}
+
+
+/* css */
+
+html, body {
+	-moz-osx-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+/* nav and header */
+h1 {
+	color: white;
+	font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	font-weight: 400;
+	letter-spacing: .15em;
+	opacity: .70;
+	text-align: left;
+
+}
+.heroText {
+	position: relative;
+	top: 25%;
+	-ms-box-orient: horizontal;
+	display: block;
+	text-align: center;
+	margin:0 auto;
+	width: 65%;
+	max-width: 1000px;
+
+}
+nav {
+	z-index: 9999;
+	padding: 17px 0 0 0;
+	margin: 0;
+	color: white;
+	text-decoration: none;
+	list-style: none;
+	position: fixed;
+	width: 100%;
+	min-height: 47px;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	-ms-box-orient: horizontal;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+}
+.header {
+  width: 100%;
+  text-align: right;
+  position: relative;
+}
+.header .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  font-weight: 100;
+  padding: 26px;
+  border-right: 1px solid black;
+}
+.title {
+	font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.name {
+	font-size: 24px;
+	padding: 30px 25px;
+	float: left;
+	vertical-align: middle;
+	display: inline-block;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 24px;
+}
+.name a {
+	color: #ffffff;
+	text-decoration: none;
+}
+.link {
+  display: inline-block;
+  padding: 15px 0;
+  margin: 15px 25px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 24px;
+}
+.link .bar {
+  width: 100%;
+  display: inline-block;
+  border-bottom: 5px solid white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 300ms;
+}
+.link:hover .bar {
+  opacity: 1;
+  bottom: 5px;
+}
+
+
+/*body */
+.home {
+	z-index: 98;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+.mainBackground {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	z-index: 99;
+	list-style: none;
+}
+.image {
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	display: block;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-webkit-transition: opacity 1s ease-in-out;
+	// IE <9 Fallback
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+.active {
+	opacity: 1;
+}
+.image:nth-of-type(1) {
+	background: url('../../assets/applMonitor.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+
+
+.hide, .mobHamb {
+	display: none;
+}
+.show {
+	display: block;
+}
+
+
+.follow {
+	background-color: rgba(255, 255, 255, 1);
+	color: black;
+	text-shadow: none;
+}
+section {
+	margin: 40px auto 40px auto;
+	padding: 50px 20px;
+	width: 80%;
+	max-width: 1000px;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	overflow: hidden;
+}
+.sectionText {
+	width: 75%;
+	margin: 0 auto;
+}
+#about {
+	background: #4281A4;
+}
+#blog {
+	background: #FE938C;
+}
+#contact {
+	background: #9CAFB7;
+}
+
+.portrait {
+	max-width: 200px;
+	max-height: 200px;
+	text-align: center;
+	border-radius: 50%;
+	margin-bottom: 25px;
+}
+p {
+	font-size: .65em;
+	line-height: 1.5em;
+	text-align: left;
+	font-family: 'Questrial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.alink{
+	text-decoration: none;
+	color: #566c73;
+	position: relative;
+}
+.alink:hover {
+	color: #566c73;
+}
+.alink:before {
+	content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #566c73;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.alink:hover:before {
+	  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.black a {
+	color: #000;
+}
+.black a:hover {
+	padding-bottom: 4px;
+	border-bottom: 4px solid #000;
+}
+
+/* media queries */
+@media (max-width: 700px) {
+.heroText {
+	width: 90%;
+	top: 20%;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+	.header {
+		text-align: left;
+	}
+	.name {
+		width: 100%;
+		text-align: left;
+		padding: 10px 15px;
+		margin: 0;
+	}
+	.menu {
+		display: none;
+	}
+	.show {
+	display: block;
+}
+	.link {
+		display: inline-block;
+		font-size: 16px;
+		padding: 10px 15px;
+		margin: 0;
+		text-align: left;
+	}
+	.mobHamb {
+		display: block;
+	}
+	a.menu-trigger {
+		display: block;
+	}
+	.link .bar {
+		border-bottom: none;
+	}
+	.sectionText {
+		width: 95%;
+	}
+}
+

@@ -27,10 +27,10 @@ var config = {
 function bundle(bundler) {
 gulp.src('./js/*.js')
     .pipe(concat('full.js'))
-    .pipe(gulp.dest('./js/concat/'))
+    .pipe(gulp.dest('./public/'))
 gulp.src(['./css/fonts.css','./css/cursor.css','./css/menuAnimation.css','./css/index.css'])
     .pipe(concat('full.css'))
-    .pipe(gulp.dest('./css/concat/'))
+    .pipe(gulp.dest('./public/'))
 
     // Add options to add to "base" bundler passed as parameter
     bundler.bundle() // Start bundle
